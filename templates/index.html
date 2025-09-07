@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Repair Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h2 {
+    font-size: 1.8rem;
+    font-family: 'Segoe UI', sans-serif;
+
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); /* optional shadow for contrast */
+}
+body {
+      background-image: url('your-image.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+    }
+h1{
+    color: black;
+}
+    </style>
+</head>
+<body class="bg-light text-center py-5" style="background-image: url(https://img.freepik.com/premium-photo/photorealistic-eye-catching-hyper-realistic-best-quality-image-white-background_643360-496982.jpg?w=360);">     
+    <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="d-flex align-items-center ">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5BffL1MsIUp9uHlct-5AmLF3d5xriXt1VvBX6fKUcS5OOJeg0_r515ddrDnY4aD2wu3Y&usqp=CAU" alt="SmartFix Logo" width="80" height="80" class="me-3">
+ </div>
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+<a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+<a class="nav-link" href="{{ url_for('thankyou') }}">Thank You</a>
+
+           <a href="/customer_login" class="btn btn-secondary">Login</a>
+    <a href="/register" class="btn btn-secondary">Register</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+   <h1>Welcome to SmartFix Devices</h1>
+   <p>We come to your home and fix your device on the spot!</p>
+    </header> <br>
+    <a href="/book" class="btn btn-primary mt-3">Book a Repair</a>
+    <a href="/my_bookings" class="btn btn-primary mt-3">My Bookings</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="bg-primary text-white text-center py-3 mt-auto">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 SmartFix. All rights reserved.</p>
+    <small>Made with by Team SmartFix</small>
+  </div>
+</footer>
+
+</body>
+</html> 
+

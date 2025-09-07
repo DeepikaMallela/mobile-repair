@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartFix - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: rgba(0, 123, 255, 0.7); /* Transparent Blue */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #004d40;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #555;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://sdmntpreastus.oaiusercontent.com/files/00000000-1ac8-61f9-a05e-b52fdc5979aa/raw?..." alt="SmartFix Logo" width="50" height="50" class="me-2">
+            SmartFix
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+<a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+<a class="nav-link" href="{{ url_for('thankyou') }}">Thank You</a>
+
+           <a href="/customer_login" class="btn btn-secondary">Login</a>
+    <a href="/register" class="btn btn-secondary">Register</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero mt-5 pt-5">
+    <h1>“Fixing Problems. Restoring Trust.”</h1>
+    <p>Your one-stop solution for fast, reliable mobile repair service at your doorstep.</p>
+    <a href="/register" class="btn btn-custom mt-4">Get Started</a>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
